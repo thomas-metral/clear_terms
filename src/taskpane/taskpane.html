@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script type="module" src="./taskpane.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Assistant Réécriture</title>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo de l'add-in" class="logo" />
+    <h2>Assistant Réécriture</h2>
+
+    <button class="action-button" onclick="rewriteSelectedCell()">📝 Transformer la cellule sélectionnée</button>
+    <button class="action-button" onclick="refreshPane()">🔄 Rafraîchir</button>
+
+    <div id="output" class="output-message"></div>
+    <div id="refreshMessage" class="refresh-message">✅ Add-in rafraîchi !</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #1e1e1e;
+  --text-light: #333;
+  --text-dark: #f5f5f5;
+  --button-light: #0078d4;
+  --button-dark: #4c9aff;
+  --button-hover-light: #005a9e;
+  --button-hover-dark: #3a82cc;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  .action-button {
+    background-color: var(--button-dark);
+  }
+
+  .action-button:hover {
+    background-color: var(--button-hover-dark);
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 120px;
+  height: auto;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.action-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--button-light);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: var(--button-hover-light);
+}
+
+.output-message {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.refresh-message {
+  display: none;
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
